@@ -22,6 +22,5 @@ func TestPoint(t *testing.T) {
 }
 
 func TestString(t *testing.T){
-	var s string
-	
+		
 }
