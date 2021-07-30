@@ -6,10 +6,24 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello world Git")
-	ip := "192.168.1.171:5555"
+	// fmt.Println("Hello world Git")
+	// adbconnect()
+	// startOuO()
+	startflipclock()
+}
+
+func startOuO(){
+	RunCommand("adb","shell","am","start","com.elpatrixf.OuO/com.elpatrixf.OuO.Main")
+}
+
+func startflipclock(){
+	RunCommand("adb","shell","am","start","one.alynx.flipclock/one.alynx.flipclock.MainActivity")
+}
+
+func adbconnect(){
+	ip := "192.168.3.6:5555"
 	RunCommand("adb","connect",ip)
-	RunCommand("adb","disconnect",ip)
+	// RunCommand("adb","disconnect",ip)
 	// RunCommand("scrcpy","-s",ip)
 }
 
